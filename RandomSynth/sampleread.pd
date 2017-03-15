@@ -1,0 +1,27 @@
+#N canvas 16 82 510 360 12;
+#X obj 12 12 inlet;
+#X obj 116 68 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 12 222 tabread~ \$1;
+#X obj 12 38 spigot;
+#X obj 58 12 inlet;
+#X msg 12 68 30104 940.7;
+#X obj 12 197 line~;
+#X obj 61 123 del 940.7;
+#X obj 150 193 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 61 151 5;
+#X obj 12 295 throw~ 2\$1;
+#X obj 13 257 *~ 0.5;
+#X connect 0 0 3 0;
+#X connect 2 0 11 0;
+#X connect 3 0 5 0;
+#X connect 3 0 1 0;
+#X connect 3 0 7 0;
+#X connect 4 0 3 1;
+#X connect 5 0 6 0;
+#X connect 6 0 2 0;
+#X connect 7 0 9 0;
+#X connect 7 0 8 0;
+#X connect 9 0 6 0;
+#X connect 11 0 10 0;

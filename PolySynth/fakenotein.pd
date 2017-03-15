@@ -1,0 +1,12 @@
+#N canvas 0 22 170 119 10;
+#X obj 10 9 r minikey;
+#X msg 10 32 \$2 \$3 \$1;
+#X obj 10 56 unpack 0 0 0;
+#X obj 10 88 outlet;
+#X obj 57 88 outlet;
+#X obj 104 88 outlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 2 2 5 0;
